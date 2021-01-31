@@ -1,0 +1,337 @@
+/* FONTS */
+
+@font-face {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/barlow/v5/7cHpv4kjgoGqM7E_DMs5ynghnQ.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/barlow/v5/7cHqv4kjgoGqM7E30-8s51ostz0rdg.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+html {
+  font-family: "Barlow", serif;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+p {
+  line-height: 1.2em;
+}
+
+/* HEADER */
+
+#navbar {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background-color: gold;
+  top: 0;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  min-width: 300px;
+  max-width: 400px;
+  float: left;
+  padding-left: 45px;
+}
+
+.menu {
+  padding-right: 45px;
+}
+
+.menu li {
+  display: inline;
+  padding-left: 25px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+li a:hover {
+  color: darkred;
+}
+
+/* MISSION */
+
+#mission {
+  background-image: url("/resources/images/London1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  min-height: 750px;
+  max-height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 100px;
+  flex-flow: column wrap;
+}
+
+.mission-text-background {
+  margin: 0 auto;
+  color: white;
+  background-color: black;
+  margin: 0 auto;
+  opacity: 0.8;
+  max-width: 60%;
+  border-radius: 25px;
+}
+
+.mission-text {
+  padding: 1.5em;
+}
+
+.mission-text h2 {
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5em;
+  min-width: 45%;
+  max-width: 95%;
+}
+
+.mission-text p {
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5em;
+  min-width: 45%;
+  max-width: 85%;
+  padding-top: 1em;
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.portfolio h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.work {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.work img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.work h4 {
+  padding-bottom: 1em;
+  padding-top: 0.5em;
+  text-align: center;
+}
+
+/* OUR TEAM */
+
+.team {
+  display: block;
+  background-color: gold;
+  display: flex;
+  flex-flow: column wrap;
+  padding-top: 50px;
+  margin: 100px auto 0 auto;
+  text-align: center;
+}
+
+div .about {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
+  padding: 2.5rem;
+}
+
+.about img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 25px;
+  margin-top: 1rem;
+}
+
+.about h4 {
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+.about p {
+  text-align: center;
+  font-size: 0.9rem;
+  width: 75%;
+  margin: 0 auto;
+  padding: 0.2rem;
+}
+
+/* CONTACT */
+
+footer {
+  background-color: black;
+}
+
+a {
+  color: gold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: darkred;
+}
+
+.contact {
+  padding-top: 2.5rem;
+  text-align: center;
+  color: white;
+  font-weight: normal;
+}
+
+.copyright {
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.75rem;
+  color: white;
+}
+
+/* MOBILE DESIGN */
+
+@media only screen and (max-width: 600px) {
+  #navbar {
+    display: block;
+    height: 80px;
+  }
+
+  .logo img {
+    display: block;
+    margin: 0 auto;
+    max-width: 75%;
+    padding-top: 1rem;
+    float: none;
+    padding-left: 0;
+  }
+
+  .menu li {
+    display: none;
+  }
+
+  .about {
+    width: 100%;
+    padding: 0;
+  }
+
+  .about img {
+    width: 80%;
+  }
+
+  .about p {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .mission-text-background {
+    margin: 0 auto;
+    color: white;
+    background-color: black;
+    margin: 0 auto;
+    opacity: 0.8;
+    max-width: 85%;
+    border-radius: 25px;
+  }
+
+  .mission-text {
+    padding: 1.2em 0.5em;
+  }
+
+  .mission-text h2 {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5em;
+    min-width: 45%;
+    max-width: 85%;
+  }
+
+  .mission-text p {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5em;
+    min-width: 55%;
+    max-width: 75%;
+    padding-top: 1em;
+  }
+
+  .team {
+    justify-content: center;
+    align-content: center;
+  }
+
+  div .about {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .about img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+
+  .about h4 {
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 1rem;
+  }
+
+  .about p {
+    text-align: center;
+    font-size: 0.9rem;
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 0.2rem;
+    padding-bottom: 1.5rem;
+  }
+}
